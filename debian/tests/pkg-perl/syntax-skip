@@ -1,0 +1,6 @@
+# Testing lib/Text/Xslate/PP/State.pm with syntax.t generates errors
+# as the file uses Mouse syntax.
+#
+# syntax error at /usr/lib/x86_64-linux-gnu/perl5/5.22/Text/Xslate/PP/State.pm line 18, near "has vars"
+# syntax error at /usr/lib/x86_64-linux-gnu/perl5/5.22/Text/Xslate/PP/State.pm line 67, near "}"
+Text/Xslate/PP/State.pm

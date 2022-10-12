@@ -1,0 +1,3 @@
+# need the source tree. could probably patched as an alternative to skipping.
+t/200_app/001_hello.t
+t/200_app/002_tree.t

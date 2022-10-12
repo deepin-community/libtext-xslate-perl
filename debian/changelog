@@ -1,0 +1,99 @@
+libtext-xslate-perl (3.5.9-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints.
+    + libtext-xslate-perl: Add Multi-Arch: same.
+  * Remove constraints unnecessary since buster
+    * Build-Depends: Drop versioned constraint on libmouse-perl and perl.
+    * libtext-xslate-perl: Drop versioned constraint on libmouse-perl
+      in Depends.
+
+  [ gregor herrmann ]
+  * Import upstream version 3.5.9.
+  * Declare compliance with Debian Policy 4.6.0.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 06 Nov 2021 18:31:43 +0100
+
+libtext-xslate-perl (3.5.8-1) unstable; urgency=medium
+
+  * Team upload.
+  * Update 'DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow' to '=+all'.
+  * Import upstream version 3.5.8
+  * Declare compliance with Debian Policy 4.5.0.
+  * Set Rules-Requires-Root: no.
+  * Bump debhelper-compat to 13.
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 04 Jun 2020 18:36:27 +0200
+
+libtext-xslate-perl (3.5.7-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Import upstream version 3.5.7.
+  * Update Build-Depends for cross builds.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Declare compliance with Debian Policy 4.4.1.
+  * Drop unneeded version constraints from (build) dependencies.
+  * Bump debhelper-compat to 12.
+  * debian/watch: use uscan version 4.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 29 Nov 2019 16:31:01 +0100
+
+libtext-xslate-perl (3.5.6-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 3.5.6.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 12 Jan 2018 18:13:07 +0100
+
+libtext-xslate-perl (3.5.5-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 3.5.5.
+  * Declare compliance with Debian Policy 4.1.3.
+  * Bump debhelper compatibility level to 10.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 07 Jan 2018 00:38:47 +0100
+
+libtext-xslate-perl (3.5.4-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Drop debian/tests/pkg-perl/smoke-tests, handled by pkg-perl-
+    autopkgtest now.
+
+  [ Nick Morrott ]
+  * New upstream version 3.5.4
+  * Refresh build dependencies
+  * Declare compliance with Debian Policy 4.1.2 (no changes)
+  * Refresh copyright details
+
+  [ gregor herrmann ]
+  * Update debian/upstream/metadata.
+
+ -- Nick Morrott <knowledgejunkie@gmail.com>  Thu, 21 Dec 2017 22:44:38 +0000
+
+libtext-xslate-perl (3.4.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Import upstream version 3.4.0.
+  * Drop patches, both merged/fixed upstream.
+  * Declare compliance with Debian Policy 3.9.8.
+  * Set bindnow linker flag in debian/rules.
+  * Activate more autopkgtest smoke tests.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 21 Jan 2017 20:48:52 +0100
+
+libtext-xslate-perl (3.3.9-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #654778)
+
+ -- Nick Morrott <knowledgejunkie@gmail.com>  Sun, 27 Mar 2016 22:55:03 +0000

@@ -1,0 +1,43 @@
+Source: libtext-xslate-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Nick Morrott <knowledgejunkie@gmail.com>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               libdata-messagepack-perl <!nocheck>,
+               libfile-copy-recursive-perl <!nocheck>,
+               libmodule-build-perl,
+               libmodule-build-xsutil-perl,
+               libmouse-perl <!nocheck>,
+               libtest-requires-perl <!nocheck>,
+               perl-xs-dev,
+               perl:native
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtext-xslate-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtext-xslate-perl.git
+Homepage: https://metacpan.org/release/Text-Xslate
+Rules-Requires-Root: no
+
+Package: libtext-xslate-perl
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends},
+         libdata-messagepack-perl,
+         libmouse-perl
+Description: scalable template engine for Perl 5 (C/XS accelerated)
+ Text::Xslate is a template engine, tuned for persistent applications, safe
+ as an HTML generator, and with rich features.
+ .
+ There are a lot of template engines in CPAN, for example Template-Toolkit,
+ Text::MicroTemplate, HTML::Template, and so on, but all of them have some
+ weak points: a full-featured template engine may be slow, while a fast
+ template engine may be too simple to use. This is why Text::Xslate is
+ developed, which is to be the best template engine for web applications.
+ .
+ The concept of Text::Xslate is strongly influenced by Text::MicroTemplate and
+ Template-Toolkit 2, but the central philosophy of Text::Xslate is different
+ from them. That is, the philosophy is one of sandboxing; that the template
+ logic should not have no access outside the template beyond your permission.
